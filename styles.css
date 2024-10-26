@@ -1,0 +1,617 @@
+:root {
+    --color-1: #463F3A;
+    --color-2: #8A817C;
+    --color-3: #BCB8B1;
+    --color-4: #F4F3EE;
+    --color-5: #E73B37;
+}
+
+.container {
+    display: grid;
+    height: 400vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr .2fr .1fr .1fr .1fr .1fr 1fr ;
+    grid-template-areas: 
+        "hero hero hero hero"
+        "perk1 perk2 perk3 perk4"
+        "logos logos logos logos"
+        "data data data data"
+        "howTitle howTitle howTitle howTitle"
+        "how1L how1L how1R how1R"
+        "how2L how2L how2R how2R"
+        "how3L how3L how3R how3R"
+        "enrollTitle enrollTitle enrollTitle enrollTitle "
+        "enrollL enrollL enrollR enrollR"
+    ;
+    font-family: 'poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    color: var(--color-1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+#hero {
+    grid-area: hero;
+    background-color: var(--color-4);
+}
+
+#perk1 {
+    grid-area: perk1;
+    background-color: var(--color-4);
+}
+
+#perk2 {
+    grid-area: perk2;
+    background-color: var(--color-4);
+}
+
+#perk3 {
+    grid-area: perk3;
+    background-color: var(--color-4);
+}
+
+#perk4 {
+    grid-area: perk4;
+    background-color: var(--color-4);
+}
+
+#logos {
+    grid-area: logos;
+    background-color: var(--color-2);
+}
+
+#data {
+    grid-area: data;
+    background-color: var(--color-1);
+}
+
+#howTitle {
+    grid-area: howTitle;
+    background-color: var(--color-4);
+}
+
+#how1L {
+    grid-area: how1L;
+    background-color: var(--color-4);
+}
+
+#how1R {
+    grid-area: how1R;
+    background-color: var(--color-1);
+}
+
+#how2L {
+    grid-area: how2L;
+    background-color: var(--color-1);
+}
+
+#how2R {
+    grid-area: how2R;
+    background-color: var(--color-4);
+}
+
+#how3L {
+    grid-area: how3L;
+    background-color: var(--color-4);
+}
+
+#how3R {
+    grid-area: how3R;
+    background-color: var(--color-1);
+}
+
+#enrollTitle {
+    grid-area: enrollTitle;
+    background-color: var(--color-2);
+}
+
+#enrollL {
+    grid-area: enrollL;
+    background-color: var(--color-5);
+}
+
+#enrollR {
+    grid-area: enrollR;
+    background-color: var(--color-5);
+}
+
+
+
+
+
+.heroContainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.heroImage {
+    object-fit: cover;
+}
+
+
+.perk1 {
+    text-align: center;
+    color: var(--color-1);
+    padding: 2vh;
+}
+
+.picPerk1 {
+    width: 50%;
+    max-width: 150px;
+    max-height: 100px;
+    padding-top: 50px;
+}
+
+
+
+
+.logoBanner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo1 {
+    width: 15%;
+    max-width: 200px;
+}
+
+.featuredIn {
+    color: var(--color-4)
+}
+
+.dataBackground2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dataBack {
+    width: 100%;
+    max-width: 1500px;
+}
+
+
+
+
+
+.sectionTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how1R {
+    width: 100%;
+    max-width: 500px;
+}
+
+.howToPics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.howText {
+    color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+
+
+
+.enrollPhoto {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.freePrice {
+    max-width: 100%;
+    max-height: 500px;    
+}
+
+.enrollBody {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+  }
+  
+  .form {
+    background-color: var(--color-1);
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 20px;
+    width: 320px;
+  }
+  
+  .title {
+    color: var(--color-4);
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: var(--color-4);
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: var(--color-2);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: var(--color-4);
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: var(--color-1);
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+  }
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: var(--color-1);
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: var(--color-2);
+  }
+  
+  .input:focus ~ .placeholder {
+    color: var(--color-5);
+  }
+  
+  .submit {
+    background-color: var(--color-5);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: var(--color-4);
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    // outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: var(--color-5);
+  }
+  
+
+@media (min-width: 1600px) {
+
+}
+
+
+
+
+@media (max-width: 1302px) {
+    
+    .container {
+        display: grid;
+        height: 300vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .1fr .1fr .1fr .1fr .2fr .1fr .1fr .1fr .1fr .1fr 1fr;
+        display: grid;
+        grid-template-areas:
+        "hero hero hero hero"
+        "perk1 perk1 perk2 perk2"
+        "perk3 perk3 perk4 perk4"
+        "logos logos logos logos"
+        "data data data data"
+        "howTitle howTitle howTitle howTitle"
+        "how1L how1L how1R how1R"
+        "how2L how2L how2R how2R"
+        "how3L how3L how3R how3R"
+        "enrollTitle enrollTitle enrollTitle enrollTitle "
+        "enrollL enrollL enrollR enrollR"
+    ;
+    }
+
+    .perk1 {
+        padding-left: 50px;
+        padding-right: 50px;
+        /* padding-bottom: 50px; */
+    }
+
+    .perk1 h3 {
+        text-align: center;
+        color: var(--color-1);
+        padding: 5vh;
+    }
+
+    .perk1 p {
+        font-size: 1rem;
+    }
+
+    .picPerk1 {
+        width: 50%;
+        max-width: 150px;
+        max-height: 100px;
+        padding-top: 50px;
+    }
+
+
+    .how1R {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .howToPics {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+}
+
+
+@media (max-width: 900px) {
+
+    .container {
+        display: grid;
+        height: 300vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .1fr .1fr .1fr .1fr .2fr .1fr .1fr .1fr .1fr .1fr 1fr;
+        grid-template-areas: 
+        "hero hero hero hero"
+        "perk1 perk1 perk2 perk2"
+        "perk3 perk3 perk4 perk4"
+        "logos logos logos logos"
+        "data data data data"
+        "howTitle howTitle howTitle howTitle"
+        "how1L how1L how1R how1R"
+        "how2L how2L how2R how2R"
+        "how3L how3L how3R how3R"
+        "enrollTitle enrollTitle enrollTitle enrollTitle "
+        "enrollL enrollL enrollR enrollR"
+    ;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .perk1 {
+        text-align: center;
+        color: var(--color-1);
+        padding: 1vh;
+    }
+    
+    .picPerk1 {
+        width: 50%;
+        max-width: 150px;
+        max-height: 100px;
+        padding-top: 20px;
+    }
+
+    .howText h2 {
+        font-size: 2rem;
+    }
+
+    .howText h4 {
+        font-size: 1.3rem;
+    }
+
+    .howText p {
+        font-size: .85rem;
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .container {
+        display: grid;
+        height: 300vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .1fr .1fr .1fr .1fr .2fr .1fr .1fr .1fr .1fr .1fr 1fr;
+        grid-template-areas: 
+        "hero hero hero hero"
+        "perk1 perk1 perk2 perk2"
+        "perk3 perk3 perk4 perk4"
+        "logos logos logos logos"
+        "data data data data"
+        "howTitle howTitle howTitle howTitle"
+        "how1L how1L how1R how1R"
+        "how2L how2L how2R how2R"
+        "how3L how3L how3R how3R"
+        "enrollTitle enrollTitle enrollTitle enrollTitle "
+        "enrollL enrollL enrollR enrollR"
+    ;
+    }
+
+    .featuredIn h3 {
+        font-size: 1rem;
+    }
+
+    .perk1 {
+        text-align: center;
+        color: var(--color-1);
+        padding: 1vh;
+    }
+    
+    .picPerk1 {
+        width: 50%;
+        max-width: 150px;
+        max-height: 100px;
+        padding-top: 20px;
+    }
+    
+    .perk1 h3 {
+        font-size: 1.1rem;
+    }
+
+    .perk1 p {
+        font-size: .9rem;
+    }
+
+    .howText {
+        color: var(--color-1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px;
+    }
+
+    .howText h2 {
+        font-size: 1.5rem;
+    }
+
+    .howText h4 {
+        font-size: 1.3rem;
+    }
+
+    .howText p {
+        font-size: .85rem;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        display: grid;
+        grid-template-areas: 
+        "hero hero hero hero"
+        "perk1 perk1 perk1 perk1"
+        "perk2 perk2 perk2 perk2"
+        "perk3 perk3 perk3 perk3"
+        "perk4 perk4 perk4 perk4"
+        "logos logos logos logos"
+        "data data data data"
+        "howTitle howTitle howTitle howTitle"
+        "how1R how1R how1R how1R"
+        "how1L how1L how1L how1L"
+        "how2L how2L how2L how2L"
+        "how2R how2R how2R how2R"
+        "how3R how3R how3R how3R"
+        "how3L how3L how3L how3L"
+        "enrollTitle enrollTitle enrollTitle enrollTitle "
+        "enrollL enrollL enrollL enrollL"
+        "enrollR enrollR enrollR enrollR"
+    ;
+    }
+
+    .sectionTitle {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .how1R {
+        width: 70%;
+        max-width: 500px;
+    }
+
+    .howText {
+        color: var(--color-1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px;
+    }
+
+    .howText h2 {
+        font-size: 2.5rem;
+    }
+
+    .howText h4 {
+        font-size: 2rem;
+    }
+
+    .howText p {
+        font-size: 1rem;
+    }
+
+
+}
